@@ -2,6 +2,7 @@
 #define _SORT_H_
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -25,4 +26,7 @@ void selection_sort(int *array, size_t size);
 int partition(int *array, size_t size, int lb, int ub);
 void quick_sort(int *array, size_t size);
 void quick_sort_recursive(int *array, size_t size, int lb, int ub);
+void merge_sort(int *array, size_t size);
+void merge_array(int *array, int *buff, size_t front, size_t mid, size_t back);
+
 #endif
